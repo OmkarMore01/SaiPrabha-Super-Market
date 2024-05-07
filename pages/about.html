@@ -1,11 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link rel="icon" type="image/x-icon" href="../icons/index/feevicon.png">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="./../css/about.css" />
+  <link rel="stylesheet" href="./../css/style.css">
+  <script src="./../js/about.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <style>
+  
+    .card-btn {
+      color: white;
+    }
+    .nav-link{
+      font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    }
+    .nav-link:hover {
+    color:orange;
+    border: 1px solid #ffab19;
+    border-radius: 10px;
+}
+    .btn{
+      border: none;
+    }
+
+  </style>
+
 </head>
-<body>
-    
+
+<body class="body">
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../icons/index/logo.png" class="logo" alt="logo">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <button type="button" class="btn ">
+                        <a class="nav-link " aria-current="page" href="../index.html">Home</a></button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn ">
+                        <a class="nav-link" href="../pages/about.html">About Us</a></button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn ">
+                        <a class="nav-link" href="../pages/packages.html">Packages</a></button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn">
+                        <a class="nav-link" href="../pages/blog.html">Blogs</a></button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn ">
+                        <a class="nav-link" href="../pages/medic.html">Medicare</a></button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn ">
+                        <a class="nav-link" href="../pages/accommodation.html">accommodation</a></button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn "> <a class="nav-link"
+                            href="../pages/review.html">Reviews</a></button>
+                </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+                <button class="login" type="button">
+                    <a href="../pages/login.html"> <img src="../icons/index/login.png" class="login-img"
+                            alt="login"></a>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+  <h1 class="main-heading" style="color: black;">About Us</h1>
+  <hr height="15px">
+
+  <div class="about-section">
+
+    <div class="d-flex flex-row mb-3">
+      <p id="companyInfo" class="companyInfo">
+        Welcome to SaiPrabha Supermarket! Since our establishment,
+         we've been dedicated to providing top-quality products and exceptional service to the Customers.
+         <span class="firstparaspan">  As a locally-owned and operated establishment, we pride ourselves on being a cornerstone of the community,
+         offering convenience, quality, and affordability in every aisle.
+          Our friendly staff is committed to ensuring a seamless shopping experience, 
+          while our extensive selection of products caters to the diverse needs of our customers. </span>
+          At SaiPrabha Supermarket, we believe in giving back to the community that has supported us,
+           and we're proud to be actively involved in local initiatives and partnerships...
+      </p>
+    </div>
+    <h2 class="heading" style="color: black;">Who We Are</h2>
+    <div class="who-we-are-section">
+
+      <p>
+        We are SaiPrabha Supermarket, your friendly neighborhood store in Loni.
+         Our team is here to make your grocery shopping experience easy and enjoyable. 
+         We care about providing you with the best products at affordable prices.
+        At SaiPrabha, we believe in being helpful and kind to everyone who walks through our doors.<span class="firstparaspan">
+         Our staff is always ready to assist you in finding what you need. We take pride in offering fresh,
+          high-quality items that you can trust.        
+        As a part of the Loni community, we love giving back and supporting local causes. 
+        When you shop with us, you're not just buying groceries 
+         you're supporting your community too.</span></p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <h2 class="heading" style="color: black;">Our Team</h2>
+  <div class="team">
+    <div class="our-team">
+
+      <div class="team-cards">
+        <div class="team-card">
+          <div class="team-img">
+            <img id="img" onclick="change()" ondblclick="dblchange()" src="./../img/about/omkar.jpg"
+              alt="Image not Found" />
+          </div>
+          <div class="team-detail">
+            <h3>Omkar More</h3>
+            <a href="https://www.instagram.com/moreomkar1651?igsh=MWdzZDFnOHQ1ZXEzYQ==">
+              <i id="instaid" class="bx bxl-instagram s-icon" onmouseenter="empty()"
+                onmouseleave="instacolor()"></a></i>
+            
+            <a href="https://facebook.com/OmkarMore01/tourism-website-icp7">
+              <i id="facebook" class="bx bxl-facebook s-icon" onmouseenter="emptyfacebook()"
+                onmouseleave="facebookcolor()"></a></i>
+            <p id="para">Owner</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-img">
+            <img id="img1" onclick="change1()" ondblclick="dblchange1()" src="./../img/about/bhakti.jpg"
+              alt="Image not Found" />
+          </div>
+          <div class="team-detail">
+            <h3>Bhakti Shinde</h3>
+            <a href="https://www.instagram.com/bhaktishinde2388?igsh=MWYzcGNjaGJ5bzhyaA=="><i id="instaid1"
+                class="bx bxl-instagram s-icon" onmouseenter="empty1()" onmouseleave="instacolor1()"></a></i>
+            
+            <a href="https://facebook.com/bhaktishinde2388"><i id="facebook1" onmouseenter="emptyfacebook1()"
+                onmouseleave="facebookcolor1()" class="bx bxl-facebook s-icon"></a></i>
+            <p id="para1">Manager</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-img">
+            <img id="img2" onclick="change2()" ondblclick="dblchange2()" src="./../img/about/atharva.jpg"
+              alt="Image not Found" />
+          </div>
+          <div class="team-detail">
+            <h3>Atharva Bhondave</h3>
+            <a href="https://www.instagram.com/atharva_bhondave?igsh=MXJ5NW50NjJkbnR2eA=="><i id="instaid2"
+                onmouseenter="empty2()" onmouseleave="instacolor2()" class="bx bxl-instagram s-icon"></a></i>
+            
+            <a href="https://facebook.com/atharva-bhondave"><i id="facebook2" onmouseenter="emptyfacebook2()"
+                onmouseleave="facebookcolor2()" class="bx bxl-facebook s-icon"></a></i>
+            <p id="para2">Bill Creator</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-img">
+            <img id="img3" onclick="change3()" ondblclick="dblchange3()" src="./../img/about/sagar.jpg"
+              alt="Image not Found" />
+          </div>
+          <div class="team-detail">
+            <h3>Sagar Denge</h3>
+            <a href="https://www.instagram.com/dark_sylvester_?igsh"><i id="instaid3" onmouseenter="empty3()"
+                onmouseleave="instacolor3()" class="bx bxl-instagram s-icon"></a></i>
+            
+            <a href="https://facebook.com/sagardenge1"><i id="facebook3" onmouseenter="emptyfacebook3()"
+                onmouseleave="facebookcolor3()" class="bx bxl-facebook s-icon"></a></i>
+            <p id="para3">Salesmen</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-img">
+            <img id="img4" onclick="change4()" ondblclick="dblchange4()" src="./../img/about/sanika.jpg"
+              alt="Image not Found" />
+          </div>
+          <div class="team-detail">
+            <h3>Sanika duvva</h3>
+            <a href="https://www.instagram.com/itz_sanika_2005?igsh=MWQ1ZGk4d3g1dTR6cQ=="><i id="instaid4"
+                onmouseenter="empty4()" onmouseleave="instacolor4()" class="bx bxl-instagram s-icon"></a></i>
+            
+            <a href="https://facebook.com/sanikaduvva01"><i id="facebook4" onmouseenter="emptyfacebook4()"
+                onmouseleave="facebookcolor4()" class="bx bxl-facebook s-icon"></a></i>
+            <p id="para4">Saleswomen</p>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-img">
+            <img id="img5" onclick="change5()" ondblclick="dblchange5()" src="./../img/about/akanksha.jpg"
+              alt="Image not Found" />
+          </div>
+          <div class="team-detail">
+            <h3>Akanksha Yewale </h3>
+            <a href="#"><i id="instaid5" onmouseenter="empty5()" onmouseleave="instacolor5()"
+                class="bx bxl-instagram s-icon"></a></i>
+          
+            <a href=""><i id="facebook5" onmouseenter="emptyfacebook5()"
+                onmouseleave="facebookcolor5()" class="bx bxl-facebook s-icon"></a></i>
+            <p id="para5">Saleswomen</p>
+          </div>
+        </div>
+        
+
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  </div>
+  <footer class="footer mt-5 ">
+    <div class="card " style="background-color: black;">
+        <div class="d-flex justify-content-evenly flex-wrap p-3 foo">
+
+            <div>
+                <h4 style="font-family: copperplate gothic light;font-size: 30px; color: orange;">Namaste Trail</h4>
+                <l style="color: rgb(255, 255, 255);">Let us plan you a
+                    perfect India Holiday<br>Custom-Crafted Tour Packages for Unforgettable<br> Holiday
+                    Experiences
+                    in India.
+
+            </div>
+            <div>&emsp13;</div>
+            <div class=" d-flex flex-column">
+                <h4  style="color: orange;">Quick Links</h4>
+                <a href="../index.html" style="color :#fff">Home</a>
+                <a href="./about.html" style="color :#fff">About US</a>
+                <a href="./packages.html" style="color :#fff">Packages</a>
+                <a href="./blog.html" style="color :#fff">Blogs</a>
+                <a href="./medic.html" style="color :#fff">Medicare</a>
+                <a href="./accommodation.html" style="color :#fff">Accommodation</a>
+                <a href="./review.html" style="color :#fff">Review</a>
+            </div>
+
+            <div>&emsp13;</div>
+
+            <div class=" d-flex flex-column" style="color: orange;">
+                <h4>Our Services</h4>
+                <a href="./packages.html" style="color :#fff">Best Budget Packages</a>
+                <a href="./blog.html" style="color :#fff">Informative Blogs</a>
+                <a href="./medic.html" style="color :#fff">Medical Services</a>
+                <a href="./accommodation.html" style="color :#fff">Accommodation</a>
+            </div>
+
+            <div>&emsp13;</div>
+
+            <div class="social-links">
+                <h4  style="color: orange; ">follow us</h4>
+                <a href="http://youtube.com/@roadtocode4u" class=""><i class="fa-brands fa-youtube"
+                        alt="youtube-icon" style="color :#fff"></i></a>
+                <a href="https://facebook.com/harshalpatil0003/tourism-website-icp7" class=""><i
+                        class="fa-brands fa-facebook" alt="facebook-icon" style="color :#fff"></i></a>
+                <a href="http://instagram.com/roadtocode4u" class=""><i class="fa-brands fa-instagram"
+                        alt="instagram-icon" style="color :#fff"></i></a>
+                <a href="https://www.linkedin.com/in/bhakti-shinde-76bb4726a/" class=""><i
+                        class="fa-brands fa-linkedin-in" alt="inkedin-icon" style="color :#fff"></i></a>
+            </div>
+
+        </div>
+        <div class="card-footer">
+            <p class="copyright text-center" style="color: #fff;">
+                Copyright&copy;NamasteTrail 2024
+            </p>
+        </div>
+    </div>
+</footer>
 </body>
+
 </html>
