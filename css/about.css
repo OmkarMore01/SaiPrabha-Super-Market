@@ -10,14 +10,10 @@ text-align: justify;
 text-align: center;
 font-size: 40px;
 padding-top: 10px;
-margin: 1px auto;
+margin: 0px auto;
+margin-top: 30px;
 font-weight: 700;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-/** color:#4B0082 ;
-color: #800000;
-color: #8B0000;
-color: #D2691E;*/
 color: #00008B;
 
 }
@@ -46,11 +42,6 @@ width: 100%;
 margin: 20px auto;
 
 }
-
-
-
-
-
 
 
 .team {
@@ -111,7 +102,8 @@ color: #666;
 font-size: 20px;
 }
 @media screen and (max-width: 768px) {
-.team-cards {
+
+  .team-cards {
   display: flex;
   
   flex-direction: column;
@@ -138,7 +130,7 @@ font-size: 20px;
 {
   display: none;
 }
-}
+
 
 .insta
 {
@@ -160,4 +152,5 @@ background-color:#404040 ;
 .cardhover{
 transform: translateY(-20px);
 transition: .5s;
+}
 }
