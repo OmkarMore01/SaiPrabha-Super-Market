@@ -1,0 +1,35 @@
+.marquee-div
+{
+    margin-top: 50px;
+}
+.marquee{
+   
+    margin-top: 150px ;
+    font-size: 30px;
+    position: sticky;
+}
+
+.sliding-img-section
+{
+   
+    margin-top: 15px  ;
+    display: flex;
+    justify-content: center;
+
+}
+#slidaryimg{
+    border: none;
+    border-radius:30px ;
+}
+.sliding-image-container
+{ 
+    display: flex;
+    margin: 20px 480px 10px 480px ;
+    justify-content: space-around;
+    align-items: center;
+}
+.slidary-container-images
+{
+    border-radius: 10px;
+
+}
