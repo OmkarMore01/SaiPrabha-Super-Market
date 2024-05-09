@@ -49,43 +49,43 @@ function instacolor8() {
 }
 // Removing linked logo background
 function facebookcolor() {
-  const linkedinid = document.getElementById("linkedin");
+  const linkedinid = document.getElementById("facebook");
   linkedinid.classList.add("emptylinkedin");
 
 }
 
-function linkedincolor1() {
-  const linkedinid = document.getElementById("linkedin1");
+function facebookcolor1() {
+  const linkedinid = document.getElementById("facebook1");
   linkedinid.classList.add("emptylinkedin");
 
 }
 
-function linkedincolor2() {
-  const linkedinid = document.getElementById("linkedin2");
+function facebookcolor2() {
+  const linkedinid = document.getElementById("facebook2");
   linkedinid.classList.add("emptylinkedin");
 
 }
 
 function facebookcolor3() {
-  const linkedinid = document.getElementById("linkedin3");
+  const linkedinid = document.getElementById("facebook3");
   linkedinid.classList.add("emptylinkedin");
 
 }
 
 function facebookcolor4() {
-  const linkedinid = document.getElementById("linkedin4");
+  const linkedinid = document.getElementById("facebook4");
   linkedinid.classList.add("emptylinkedin");
 
 }
 
 function facebookcolor5() {
-  const linkedinid = document.getElementById("linkedin5");
+  const linkedinid = document.getElementById("facebook5");
   linkedinid.classList.add("emptylinkedin");
 
 }
 
 function facebookcolor6() {
-  const linkedinid = document.getElementById("linkedin6");
+  const linkedinid = document.getElementById("facebook6");
   linkedinid.classList.add("emptylinkedin");
 
 }
