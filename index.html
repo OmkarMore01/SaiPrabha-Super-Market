@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
     <script src="./js/index.js"></script>
-</head>
-<body>
-    <title>Index page </title>
+  </head>
+  <body>
+    <title>Index page</title>
     <!-- Navbar -->
     <header class="header">
-      <a href="./index.html"> <img src="./png/logo.svg" alt="logo"> </a>
+      <a href="./index.html">
+        <img
+          class="logo"
+          height="10px"
+          width="30px"
+          src="./img/saiprabhalogo.jpeg"
+          alt="logo"
+        />
+      </a>
       <input type="checkbox" id="check" />
       <label for="check" class="menu-bar">
         <i class="bx bx-menu" id="menu-icon"></i>
@@ -28,76 +42,169 @@
         <a href="./pages/contact.html">Contact</a>
       </nav>
     </header>
-<!--  Home Page content  -->
-<div class="marquee-div">
-  <marquee behavior="scroll" scrollamount="10" direction="left"><span class="marquee">Welcome to SaiPrabha the perfect  Super market </span>
-  <img src="./img/index/marquee.png" height="30px" alt=""></marquee>
-</div>
-  
-<div class="sliding-img-section">
-  <img src="./img/index/grocery.jpg" id="slidaryimg"  width="1150px" height="500px"  alt="image not found">
-</div>
+    <!--  Home Page content  -->
+    <div class="marquee-div">
+      <marquee behavior="scroll" scrollamount="10" direction="left"
+        ><span class="marquee"
+          >Welcome to SaiPrabha the perfect Super market
+        </span>
+        <img src="./img/index/marquee.png" height="30px" alt=""
+      /></marquee>
+    </div>
 
+    <div class="sliding-img-section">
+      <img
+        src="./img/index/main.png"
+        id="slidaryimg"
+        width="1150px"
+        height="500px"
+        alt="image not found"
+      />
+    </div>
 
-
- <div class="sliding-image-container">
-<div>
-  <img src="./img/index/main.png" class="slidary-container-images" id="slidaryimg1"  width="80px" height="80px"  alt="image not found">
-</div>
-<div>
-  <img src="./img/index/fruit.jpg" class="slidary-container-images" id="slidaryimg2"  width="80px" height="80px"  alt="image not found">
-</div>
-<div>
-  <img src="./img/index/grocery.jpg" class="slidary-container-images" id="slidaryimg3"  width="80px" height="80px"  alt="image not found">
-</div>
-<div>
-  <img src="./img/index/grocery.jpg" class="slidary-container-images" id="slidaryimg4"  width="80px" height="80px"  alt="image not found">
-</div>
-</div>
-<!-- Footer section -->
-<footer>
-  <div class="footer-container">
-    <div class="footer-content">
-      <h3>Contact Us</h3>Call  us:-
-      <a  class="linking" href="tel:+(303) 220-7662">(303) 220-7662</a><br>
-      Mail us:- <a  class="linking" href="mailto:smilecare@example.com">&nbsp;info@smilecare.com</a>
-      <p>
-        <i class="bx bxs-map"></i>
-        <a href="https://maps.app.goo.gl/yyJFNNQEGYigLV8v6" target="blank">
-          Post Office,Loni Khurd, Kolhar Rd, Shanti Nagar, Loni, Maharashtra 413713</a>
+    <div class="sliding-image-container">
+      <div>
+        <img
+          src="./img/index/main.png"
+          class="slidary-container-images"
+          id="slidaryimg1"
+          width="80px"
+          height="80px"
+          onclick="change1()"
+          alt="image not found"
+        />
+      </div>
+      <div>
+        <img
+          src="./img/index/fruit.jpg"
+          class="slidary-container-images"
+          id="slidaryimg2"
+          width="80px"
+          height="80px"
+          onclick="change2()"
+          alt="image not found"
+        />
+      </div>
+      <div>
+        <img
+          src="./img/index/grocery.jpg"
+          class="slidary-container-images"
+          id="slidaryimg3"
+          width="80px"
+          height="80px"
+          onclick="change3()"
+          alt="image not found"
+        />
+      </div>
+      <div>
+        <img
+          src="./img/index/grocery.jpg"
+          class="slidary-container-images"
+          id="slidaryimg4"
+          width="80px"
+          height="80px"
+          onclick="change4()"
+          alt="image not found"
+        />
+      </div>
+    </div>
+    <hr />
+    
+    <div class="blog1" id="blog1">
+      <center>
+        <h1>Savoring Summer: Delicious Recipes for Seasonal Delights</h1>
+      </center>
+      <p class="blog-info">
+        As the sun reaches its zenith and the days stretch luxuriously into warm
+        evenings, it's the perfect time to celebrate the abundance of summer
+        produce. From juicy tomatoes to fragrant herbs, nature's bounty offers
+        an array of flavors just waiting to be explored in your kitchen. In this
+        blog, we'll take you on a culinary journey through the vibrant colors
+        and tantalizing tastes of summer, sharing mouthwatering recipes that
+        showcase the best of seasonal ingredients...<br><br>
+        <span id="blog1-info-span"></span
+        >
       </p>
+      <center>
+        <a href="./index.html">
+        <button class="hide-back-btn" id="back1" onclick="">Back</button>
+      </a>
+        <button class="btn" id="readmore1" onclick="readmore1()">Read more</button>
+      </center>
     </div>
+    <div class="blog2" id="blog2">
+      <center>
+        <h1>SaiPrabha Super Market Savvy: Cooking Tips and Tricks</h1>
+      </center>
+      <p class="blog-info">
+        Welcome to our culinary corner of SaiPrabha Super Market, where we're
+        serving up a feast of cooking tips and tricks to elevate your kitchen
+        skills and tantalize your taste buds. From mastering basic techniques to
+        exploring new flavor combinations, our expert advice will help you
+        become a kitchen virtuoso in no time. Are you stumped on how to select
+        the perfect avocado or determine when a pineapple is ripe? Fear not! Our
+        handy guides will teach you the art of picking produce like a pro,
+        ensuring that you bring home the freshest and most flavorful ingredients
+        for your recipes...<br><span id="blog2-info-span"></span>
+      </p>
+      <center>
+        <a href="./index.html">
+          <button class="hide-back-btn" id="back2" onclick="">Back</button>
+        </a>
+        <button class="btn" id="readmore2" onclick="readmore2()">Read more</button>
+      </center>
+    </div>
+    <!-- Footer section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <h3>Contact Us</h3>
+          Call us:-
+          <a class="linking" href="tel:+(303) 220-7662">(303) 220-7662</a><br />
+          Mail us:-
+          <a class="linking" href="mailto:smilecare@example.com"
+            >&nbsp;info@smilecare.com</a
+          >
+          <p>
+            <i class="bx bxs-map"></i>
+            <a href="https://maps.app.goo.gl/yyJFNNQEGYigLV8v6" target="blank">
+              Post Office,Loni Khurd, Kolhar Rd, Shanti Nagar, Loni, Maharashtra
+              413713</a
+            >
+          </p>
+        </div>
 
-    <div class="footer-content">
-      <h3>Quick Links</h3>
-      <ul class="list">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./pages/about.html">Offers</a></li>
-        <li><a href="./pages/services.html">Services</a></li>
-        <li><a href="./pages/our_packages.html">About</a></li>
-        <li><a href="./pages/venu_page.html">Contact</a></li>
-       
-      </ul>
-    </div>
-    <div class="footer-content">
-      <h3>Follow Us</h3>
-      <ul class="footer-social-icons">
-        <li>
-          <a href="https://www.facebook.com/saiprabha">
-            <i class='bx bxl-facebook' ></i></a>
-        </li>
-        <li>
-          <a href="https://instagram.com/prabha_sai?igshid=OGQ5ZDc2ODk2ZA==">
-            <i class='bx bxl-instagram' ></i></a>
-        </li>
-       
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-   
-    <p>Copyright © SaiPrabha Super Shopee</p>
-  </div>
-</footer>
-</body>
+        <div class="footer-content">
+          <h3>Quick Links</h3>
+          <ul class="list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/about.html">Offers</a></li>
+            <li><a href="./pages/services.html">Services</a></li>
+            <li><a href="./pages/our_packages.html">About</a></li>
+            <li><a href="./pages/venu_page.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3>Follow Us</h3>
+          <ul class="footer-social-icons">
+            <li>
+              <a href="https://www.facebook.com/saiprabha">
+                <i class="bx bxl-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/prabha_sai?igshid=OGQ5ZDc2ODk2ZA=="
+              >
+                <i class="bx bxl-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © SaiPrabha Super Shopee</p>
+      </div>
+    </footer>
+  </body>
 </html>
