@@ -176,7 +176,7 @@ function change() {
   img.src = "./../img/about/om.jpg";
 
   const para = document.getElementById("para");
-  para.innerHTML = "Hii I Am Full Stack Developer";
+  para.innerHTML = "Hii I Am The Owner of SaiPrabha Market";
 }
 
 
@@ -185,7 +185,7 @@ function change1() {
   img.src = "./../img/about/bhakti1.jpg";
 
   const para = document.getElementById("para1");
-  para.innerHTML = "Hii I Am Web-Designer";
+  para.innerHTML = "Hii I Am Manager";
 }
 
 function change2() {
@@ -193,7 +193,7 @@ function change2() {
   img.src = "./../img/about/atharva.jpg";
 
   const para = document.getElementById("para2");
-  para.innerHTML = "Hii I Am UI/UX Designer";
+  para.innerHTML = "Hii I Am Bill counter manager";
 }
 
 function change3() {
@@ -201,7 +201,7 @@ function change3() {
   img.src = "./../img/about/sagar1.jpg";
 
   const para = document.getElementById("para3");
-  para.innerHTML = "Hii I Am Shopify Developer";
+  para.innerHTML = "Hii I Am salesman";
 }
 
 function change4() {
@@ -209,7 +209,7 @@ function change4() {
   img.src = "./../img/about/sanika1.jpg";
 
   const para = document.getElementById("para4");
-  para.innerHTML = "Hii I Am Web Content Manager";
+  para.innerHTML = "Hii I Am saleswomen";
 }
 
 function change5() {
@@ -217,39 +217,17 @@ function change5() {
   img.src = "./../img/about/akanksha1.jpg";
 
   const para = document.getElementById("para5");
-  para.innerHTML = "Hii I Am Frontend Developer";
+  para.innerHTML = "Hii I Am saleswomen";
 }
 
-function change6() {
-  const img = document.getElementById("img6");
-  img.src = "./../img/about/harshal.jpg";
 
-  const para = document.getElementById("para6");
-  para.innerHTML = "Hii I Am Web Engineer";
-}
-
-function change7() {
-  const img = document.getElementById("img7");
-  img.src = "./../img/about/sharmin1.jpg";
-
-  const para = document.getElementById("para7");
-  para.innerHTML = "Hii I Am E-commerce Developer";
-}
-
-function change8() {
-  const img = document.getElementById("img8");
-  img.src = "./../img/about/vaishnavi1.jpg";
-
-  const para = document.getElementById("para8");
-  para.innerHTML = "Hii I Am JavaScript Developer";
-}
 //to Regain Original Information
 function dblchange() {
   const img = document.getElementById("img");
   img.src = "./../img/about/omkar.jpg";
 
   const para = document.getElementById("para");
-  para.innerHTML = "Designer";
+  para.innerHTML = "Owner";
 }
 
 function dblchange1() {
@@ -257,56 +235,35 @@ function dblchange1() {
   img.src = "./../img/about/bhakti.jpg";
 
   const para = document.getElementById("para1");
-  para.innerHTML = "Designer";
+  para.innerHTML = "Manager";
 }
 function dblchange2() {
   const img = document.getElementById("img2");
   img.src = "./../img/about/atharva.jpg";
 
   const para = document.getElementById("para2");
-  para.innerHTML = "Designer";
+  para.innerHTML = "Bill Creator";
 }
 function dblchange3() {
   const img = document.getElementById("img3");
   img.src = "./../img/about/sagar.jpg";
 
   const para = document.getElementById("para3");
-  para.innerHTML = "Designer";
+  para.innerHTML = "salesmen";
 }
 function dblchange4() {
   const img = document.getElementById("img4");
   img.src = "./../img/about/sanika.jpg";
 
   const para = document.getElementById("para4");
-  para.innerHTML = "Designer";
+  para.innerHTML = "saleswomen";
 }
 function dblchange5() {
   const img = document.getElementById("img5");
   img.src = "./../img/about/akanksha.jpg";
 
   const para = document.getElementById("para5");
-  para.innerHTML = "Designer";
-}
-function dblchange6() {
-  const img = document.getElementById("img6");
-  img.src = "./../img/about/harshal1.jpg";
-
-  const para = document.getElementById("para6");
-  para.innerHTML = "Designer";
-}
-function dblchange7() {
-  const img = document.getElementById("img7");
-  img.src = "./../img/about/sharmin.jpg";
-
-  const para = document.getElementById("para7");
-  para.innerHTML = "Designer";
-}
-function dblchange8() {
-  const img = document.getElementById("img8");
-  img.src = "./../img/about/vaishnavi.jpg";
-
-  const para = document.getElementById("para8");
-  para.innerHTML = "Designer";
+  para.innerHTML = "saleswomen";
 }
 
 

@@ -56,6 +56,14 @@ a {
   display: none;
 }
 
+@media screen and (max-width: 768px) 
+{
+   
+    .header{
+        width: 95%;
+       
+    }
+  }
 @media screen and (max-width: 1325px) {
   .menu-bar {
     display: inline-flex;
