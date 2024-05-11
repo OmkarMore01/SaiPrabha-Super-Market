@@ -195,6 +195,14 @@
     width: 90%;    
     margin: 10px auto;
 }
+.blog-info
+{
+    font-size: 20px;
+}
+.blog-heading
+{
+    font-size: 30px;
+}
 .remove-info
 {
     display: none;
