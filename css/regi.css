@@ -1,21 +1,21 @@
 .main-container
 {
-  width: 70%;
+  width: 80%;
  display: flex;
  justify-content: center;
  margin: 150px auto;
- height: 500px;
+ height: 550px;
  border: 2px solid tomato;
   border-radius: 20px;
 }
 .form-container
 {
-  padding: 100px 20px;
+  padding: 40px 20px;
   margin-inline-start: -64px;
   margin-right: -20px;
   width: 50%;
   height: 300px;
-  
+  justify-content:center;
 }
 input
 {
@@ -42,17 +42,51 @@ label
   padding: 2px 45px;
   padding-bottom: 5px;
 }
-.login-anchor
-{
-  color: white;
-}
 .img-container
 {
   margin-inline-end: -436px;
   
 }
 .log-img{
-  height: 498px;
-  width: 60%;
-  border-radius: 0px 20px 20px 0px;
+  height: 547px;
+  width: 60.2%;
+  margin-left: 25px;
+  border-radius: 0px 18.5px 18.5px 0px;
+}
+
+
+
+@media screen and (max-width: 768px) 
+{
+  .img-container
+  {
+    display: none;
+    
+  }
+  .main-container
+  {
+    width: 90%;
+    height: 600px;
+    background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
+  }
+  .form-container
+  {
+    width: 50%;
+    padding: 10px 0px;
+    margin-inline-start: -94px;
+  margin-right: 0px;
+  
+  }
+  input
+  {
+    width: 150%;
+  }
+  
+.lbtn{
+  margin: 15px 50px;
+  padding: 5px 45px;
+ 
+}
 }
