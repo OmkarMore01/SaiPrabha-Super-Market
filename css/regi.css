@@ -4,7 +4,7 @@
  display: flex;
  justify-content: center;
  margin: 150px auto;
- height: 550px;
+ height: 450px;
  border: 2px solid tomato;
   border-radius: 20px;
 }
@@ -48,10 +48,10 @@ label
   
 }
 .log-img{
-  height: 547px;
-  width: 60.2%;
+  height: 447px;
+  width: 62.4%;
   margin-left: 25px;
-  border-radius: 0px 18.5px 18.5px 0px;
+  border-radius: 0px 17.8px 18.5px 0px;
 }
 
 

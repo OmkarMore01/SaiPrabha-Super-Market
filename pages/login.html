@@ -25,7 +25,7 @@
         </label>
         <nav class="navbar">
           <a href="./../index.html">Home</a>
-          <a href="./../pages/offers.html">Offers</a>
+          <a href="./../pages/services.html">Services</a>
           <a href="./../pages/products.html">Products</a>
           <a href="./../pages/about.html">About Us</a>
           <a href="./../pages/contact.html">Contact</a>
@@ -37,14 +37,22 @@
 <div class="form-container">
 
     <form>
+      <div class="vertical-direction-div">
+        <div class="horizontal-direction-div">
         <label for="uname">Username:</label>
-        <input type="text" id="uname" placeholder="Enter Username" ><br><br><br>
+        <input type="text" id="uname" placeholder="Enter Username" ><br><br>
+      </div>
+        <div class="horizontal-direction-div">
         <label for="pass">Password:&nbsp;</label>
-        <input type="text" id="pass"  placeholder="Enter Password" ><br><br><br>
-        
-        <button class="fbtn lbtn" onclick="verify()">Login</button><br><br><br>
-       <label for="fbtn"> Don't have an account</label><button id="fbtn" class="fbtn"> <a class="login-anchor" href="./register.html">Register_here</a></button>
-    </form>
+        <input type="text" id="pass"  placeholder="Enter Password" ><br><br>
+      </div>
+      </div>
+        <button class="fbtn lbtn" onclick="verify()">Login</button><br><br>
+        <div class="btn-container">
+           <label for="fbtn" class="btn-label"> Don't have an account</label>
+           <button id="fbtn" class="fbtn"> <a class="login-anchor" href="./register.html">Register_here</a></button>
+    
+      </div>  </form>
 </div>
 
 

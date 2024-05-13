@@ -10,17 +10,33 @@
 }
 .form-container
 {
-  padding: 100px 20px;
+ 
   margin-inline-start: -64px;
   margin-right: -20px;
   width: 50%;
   height: 300px;
   
 }
-input
+.vertical-direction-div
+{
+  
+  display: flex;
+  width: 90%;
+  height: 100px;
+  flex-direction: column;
+  margin: 80px 2px;
+  padding: 15px;
+}
+.horizontal-direction-div
+{
+  display: flex;
+  margin: 20px auto;
+}
+.horizontal-direction-div, input
 {
   border-radius: 10px;
-  width: 60%;
+  width: 90%;
+  height: 40px;
   text-align: center;
   padding: 5px ;
   font-size: 20px;
@@ -55,4 +71,76 @@ label
   height: 498px;
   width: 60%;
   border-radius: 0px 20px 20px 0px;
+}
+
+
+
+@media screen and (max-width: 768px) 
+{
+  .img-container
+  {
+    display: none;
+    
+  }
+  .main-container
+  {
+    width: 90%;
+    height: 480px;
+    background-color: #D9AFD9;
+background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
+  }
+  #fbtn
+  {
+    height: 35px;
+    padding: 5px 20px;
+    margin-left: 10px;
+  }
+  .btn-container
+  {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .form-container
+  {
+    width: 50%;
+    padding: 10px 0px;
+    margin-inline-start: -94px;
+  margin-right: 0px;
+  
+  }
+  input
+  {
+    width: 150%;
+  }
+  
+.lbtn{
+  margin: 15px 50px;
+  padding: 5px 45px;
+ 
+}
+.vertical-direction-div
+{
+  
+  
+  width: 90%;
+  height: 100px;
+  flex-direction: column;
+  margin: 20px 2px;
+  margin-bottom: 80px;
+  padding: 15px;
+}
+.horizontal-direction-div
+{
+  margin-inline-start: -40px;
+}
+.horizontal-direction-div, input
+{
+  border-radius: 10px;
+  width: 250%;
+  height: 40px;
+  text-align: center;
+  padding: 5px ;
+  font-size: 20px;
+}
 }
