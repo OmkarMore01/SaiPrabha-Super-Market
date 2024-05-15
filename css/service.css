@@ -90,6 +90,7 @@ text-align: center;
     height: 400px;
     margin: 10px auto;
     align-items: center;
+    border-radius: 5px;
 
 }
 .offer-heading
@@ -159,5 +160,62 @@ text-align: center;
     {
         width: 98%;
         margin: 20px 20px;
+    }
+    .clock-container
+    {
+        width: 70%;
+    }
+    
+  
+    .offer-info-container
+    {
+        width: 98%;
+        flex-direction: column;
+        margin: 10px auto;
+       
+    }
+    .offer-heading
+    {
+        font-size: 30px;
+        margin: 5px 35px;
+    }
+    .offer-sub-heading
+    {
+        margin: 5px 65px;
+    }
+    .arrow-image
+    {
+        height: 50px;
+        width: 50px;
+    }
+    .offer-container
+    {
+        width: 90%;
+       
+        
+    }
+    .info-img
+    {
+        height: 150px;
+        width: 150px;
+    }
+    .offer-info{
+        display: none;
+    }
+    .day
+    {
+        margin: 5px 2px;
+    }
+    .hour
+    {
+        margin: 5px 2px;
+    }
+    .min
+    {
+        margin: 5px 2px;
+    }
+    .sec
+    {
+        margin: 5px 2px;
     }
 }
