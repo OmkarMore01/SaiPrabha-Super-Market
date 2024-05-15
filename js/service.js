@@ -1,14 +1,3 @@
-
-function ready() {
-    let confValue = confirm("Are You Sure? You want to move to another page!")
-    if (confValue == true) {
-        return true
-
-    }
-    else {
-        return false
-    }
-}
 function clock() {
     const hrs = document.getElementById('hrs');
     const min = document.getElementById('min');
@@ -38,7 +27,7 @@ const hourElement = document.getElementById('b-hour');
 const minElement = document.getElementById('b-min');
 const secElement = document.getElementById('b-sec');
 function countdown() {
-    const countDate = new Date('April 30, 2024 00:00:00').getTime();
+    const countDate = new Date('May 20, 2024 00:00:00').getTime();
 
     const now = new Date().getTime();
     const gap = countDate - now;
