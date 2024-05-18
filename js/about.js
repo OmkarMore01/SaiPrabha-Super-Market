@@ -182,7 +182,7 @@ function change() {
 
 function change1() {
   const img = document.getElementById("img1");
-  img.src = "./../img/about/bhakti1.jpg";
+  img.src = "./../img/about/prajyot2.jpg";
 
   const para = document.getElementById("para1");
   para.innerHTML = "Hii I Am Manager";
@@ -190,7 +190,7 @@ function change1() {
 
 function change2() {
   const img = document.getElementById("img2");
-  img.src = "./../img/about/atharva.jpg";
+  img.src = "./../img/about/sujal2.jpg";
 
   const para = document.getElementById("para2");
   para.innerHTML = "Hii I Am Bill counter manager";
@@ -198,7 +198,7 @@ function change2() {
 
 function change3() {
   const img = document.getElementById("img3");
-  img.src = "./../img/about/sagar1.jpg";
+  img.src = "./../img/about/sagar2.jpg";
 
   const para = document.getElementById("para3");
   para.innerHTML = "Hii I Am salesman";
@@ -206,18 +206,18 @@ function change3() {
 
 function change4() {
   const img = document.getElementById("img4");
-  img.src = "./../img/about/sanika1.jpg";
+  img.src = "./../img/about/vipul2.jpg";
 
   const para = document.getElementById("para4");
-  para.innerHTML = "Hii I Am saleswomen";
+  para.innerHTML = "Hii I Am salesmen";
 }
 
 function change5() {
   const img = document.getElementById("img5");
-  img.src = "./../img/about/akanksha1.jpg";
+  img.src = "./../img/about/yuvraj2.jpg";
 
   const para = document.getElementById("para5");
-  para.innerHTML = "Hii I Am saleswomen";
+  para.innerHTML = "Hii I Am salesmen";
 }
 
 
@@ -232,14 +232,14 @@ function dblchange() {
 
 function dblchange1() {
   const img = document.getElementById("img1");
-  img.src = "./../img/about/bhakti.jpg";
+  img.src = "./../img/about/prajyot.jpg";
 
   const para = document.getElementById("para1");
   para.innerHTML = "Manager";
 }
 function dblchange2() {
   const img = document.getElementById("img2");
-  img.src = "./../img/about/atharva.jpg";
+  img.src = "./../img/about/sujal.jpg";
 
   const para = document.getElementById("para2");
   para.innerHTML = "Bill Creator";
@@ -253,17 +253,17 @@ function dblchange3() {
 }
 function dblchange4() {
   const img = document.getElementById("img4");
-  img.src = "./../img/about/sanika.jpg";
+  img.src = "./../img/about/vipul.jpg";
 
   const para = document.getElementById("para4");
-  para.innerHTML = "saleswomen";
+  para.innerHTML = "salesmen";
 }
 function dblchange5() {
   const img = document.getElementById("img5");
-  img.src = "./../img/about/akanksha.jpg";
+  img.src = "./../img/about/Yuvraj.jpg";
 
   const para = document.getElementById("para5");
-  para.innerHTML = "saleswomen";
+  para.innerHTML = "salesmen";
 }
 
 

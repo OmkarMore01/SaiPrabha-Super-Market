@@ -41,7 +41,7 @@
             <h1 class="card-heading">Mango</h1>
             <p class="card-info">Premium Quality: Our mangoes are handpicked at peak ripeness to ensure a sweet and juicy flavor. Perfect for a tropical treat any time of the year. Ideal salads.</p>
             <h2>₹60/kg</h2>
-            <button class="book-btn">Book now</button>
+            <button class="book-btn" onclick="bookNow('Mango',60,'./../img/products/mango.jpg','Premium Quality: Our mangoes are handpicked at peak ripeness to ensure a sweet and juicy flavor. Perfect for a tropical treat any time of the year. Ideal salads')">Book now</button>
             <button class="cart-btn" onclick="addToCart('Mango', 60)">Add cart</button>
           </div>
         <div class="card">
@@ -51,7 +51,7 @@
             <h1 class="card-heading">Apple</h1>
             <p class="card-info"> Our apples are sourced from local farms to ensure they are fresh and full of flavor. Enjoy the crisp taste of freshly picked apples.Choose from a wide variety of apples.</p>
             <h2>₹120/kg</h2>
-            <button class="book-btn">Book now</button>
+            <button class="book-btn" onclick="bookNow('Apple',120,'./../img/products/apple.jpg',' Our apples are sourced from local farms to ensure they are fresh and full of flavor. Enjoy the crisp taste of freshly picked apples.Choose from a wide variety of apples.')">Book now</button>
             <button class="cart-btn" onclick="addToCart('Apple', 100)">Add cart</button>
           </div>
         <div class="card">
@@ -61,7 +61,7 @@
             <h1 class="card-heading">Blackberry</h1>
             <p class="card-info">Handpicked Freshness: Our blackberries are carefully selected to ensure they are plump and juicy. Experience the rich, tart flavor that only fresh blackberries can offer.</p>
             <h2>₹180/kg</h2>
-            <button class="book-btn">Book now</button>
+            <button class="book-btn" onclick="bookNow('Blackberry',180,'./../img/products/blackberry.jpg','Handpicked Freshness: Our blackberries are carefully selected to ensure they are plump and juicy. Experience the rich, tart flavor that only fresh blackberries can offer.')">Book now</button>
             <button class="cart-btn" onclick="addToCart('Blackberry', 120)">Add cart</button>
         </div>
         <div class="card">
@@ -71,7 +71,7 @@
             <h1 class="card-heading">Strawberry</h1>
             <p class="card-info">Farm-Fresh: Our strawberries are sourced from trusted growers to ensure they are fresh and flavorful. Enjoy the sweet taste of summer all year round.Perfect for Any Dish.</p>
             <h2>₹200/kg</h2>
-            <button class="book-btn">Book now</button>
+            <button class="book-btn" onclick="bookNow('Strawberry',200,'./../img/products/strawberry.jpg','Farm-Fresh: Our strawberries are sourced from trusted growers to ensure they are fresh and flavorful. Enjoy the sweet taste of summer all year round.Perfect for Any Dish.')">Book now</button>
             <button class="cart-btn" onclick="addToCart('Strawberry', 180)">Add cart</button>
         </div>
        
@@ -79,7 +79,7 @@
 
        
       </div>
-      <h1 class="heading2">Pantry</h1>
+      <h1 class="heading2" id="pantry">Pantry</h1>
       
       <div class="product-container" id="product-container"></div>
       <div id="product-details"></div>
@@ -203,7 +203,7 @@ function updateCart() {
         cartContainer.innerHTML = ''; 
     }
 
-    alert("Sure add to cart section is follow on pantry section");
+    alert("Sure add to cart section is below on pantry section");
     if (cart.length === 0) {
         cartContainer.innerHTML = '<p>Cart is empty</p>';
     } else {
@@ -230,15 +230,16 @@ function updateCart() {
 
 
 function bookNow( productName,productPrice,productImage,productDescription) {
- 
+ const heading=document.getElementById('pantry');
+ heading.innerText="Booking Section"
   const fruitSection = document.getElementById('product-container');
     const productDetails = document.getElementById('product-details');
-
+    console.log(productPrice);
     fruitSection.style.display = 'none';
     productDetails.style.display = 'block';
-
+  alert('Sure the booking details are below in pantry div section');
     productDetails .innerHTML = `
-        <div class="card">
+        <div class="book-card">
             <img class="book-card-image" src="${productImage}" alt="${productName}">
             <h2 >${productName}</h2>
             <p class="card-info">${productDescription}</p>
@@ -250,9 +251,13 @@ function bookNow( productName,productPrice,productImage,productDescription) {
                 <button  onclick="incrementQuantity()">
                   <img style="height:15px;width:15px;" src="./../img/products/add.png" alt="Image not found">
                 </button>
-                <p class="price" id="price"></p>
-            </div>
+              </div>
+                <h2 class="price" id="price1" ><span>₹</span><span id="price">${productPrice}</span></h2>
+                <h2 class="price" id="total"></h2>
+
+           
             <button class="book-btn" onclick="buyNow('${productName}', ${productPrice})">Buy Now</button>
+            <button class="book-btn"><a href="./../pages/products.html">Back</a></button>
         </div>
     `;
 }
@@ -260,21 +265,40 @@ function bookNow( productName,productPrice,productImage,productDescription) {
 
 function incrementQuantity() {
     const quantityElement = document.getElementById('product-quantity');
-    let quantity = parseInt(quantityElement.innerText);
-    quantityElement.innerText = quantity + 1;
+    const total = document.getElementById('total');
+    const price = document.getElementById('price');
+    const price1 = document.getElementById('price1');
 
+    let quantity = parseInt(quantityElement.innerText);
+    if(quantity<10){
+    quantityElement.innerText = ++ quantity;
+    total.innerText = ` ${parseInt(price.innerText) * quantity}`;
+    price.style.display = 'none';
+    price1.style.display = 'none';
+    }
+    else
+    {
+      alert("Sorry we can't Provide more then 10 quantity of single item");
+    }
 }
 
 function decrementQuantity() {
     const quantityElement = document.getElementById('product-quantity');
+    const total = document.getElementById('total');
+    const price = document.getElementById('price');
     let quantity = parseInt(quantityElement.innerText);
     if (quantity > 1) {
-        quantityElement.innerText = quantity - 1;
+        quantityElement.innerText = --quantity;
+        total.innerText = ` ${parseInt(price.innerText) * quantity}`;
+    }
+    else
+    {
+      alert("Please select at least one quantity of item");
     }
 }
 
 function buyNow(productName, productPrice) {
-    const quantity = parseInt(document.getElementById('product-quantity').innerText);
+    
     alert(`You Purchased the ${productName} with ${productPrice}/kg price`);
 
 }
@@ -332,5 +356,3 @@ function buyNow(productName, productPrice) {
   </footer>
 </body>
 </html>
-
-

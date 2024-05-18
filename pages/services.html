@@ -1,215 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services</title>
-    <link rel="stylesheet" href="./../css/about.css" />
-    <link rel="stylesheet" href="./../css/style.css" />
-    <link rel="stylesheet" href="./../css/service.css" />
-    <script src="./../js/service.js"></script>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <a href="./index.html">
-        <img src="./../img/saiprabhalogo.jpeg" alt="logo" />
-      </a>
-      <input type="checkbox" id="check" />
-      <label for="check" class="menu-bar">
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <i class="bx bx-x" id="close-icon"></i>
-      </label>
-      <nav class="navbar">
-        <a href="./../index.html">Home</a>
-        <a href="./../pages/services.html">Services</a>
-        <a href="./../pages/products.html">Products</a>
-        <a href="./../pages/about.html">About Us</a>
-        <a href="./../pages/contact.html">Contact</a>
-      </nav>
-    </header>
-    <h1 class="first-heading">Our Services</h1>
-    <hr />
-    <h4 class="second-heading">we provide best services to our customers.</h4>
-    <div class="clock-container">
-      <div class="text-danger text-center fs-3 pt-2">
-        <span id="hrs">00</span>
-        <span>:</span>
-        <span id="min">00</span>
-        <span>:</span>
-        <span id="sec">00</span>
-        <span id="ampm"></span>
-      </div>
-      <p class="text-center" id="openclose"></p>
-      <p class="text-center">Open : 08:00 AM TO 09:00 PM</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services</title>
+  <link rel="stylesheet" href="./../css/about.css" />
+  <link rel="stylesheet" href="./../css/style.css" />
+  <link rel="stylesheet" href="./../css/service.css" />
+  
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="./index.html">
+      <img src="./../img/saiprabhalogo.jpeg" alt="logo" />
+    </a>
+    <input type="checkbox" id="check" />
+    <label for="check" class="menu-bar">
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <i class="bx bx-x" id="close-icon"></i>
+    </label>
+    <nav class="navbar">
+      <a href="./../index.html">Home</a>
+      <a href="./../pages/services.html">Services</a>
+      <a href="./../pages/products.html">Products</a>
+      <a href="./../pages/about.html">About Us</a>
+      <a href="./../pages/contact.html">Contact</a>
+    </nav>
+  </header>
+  <h1 class="first-heading">Our Services</h1>
+  <hr />
+  <h4 class="second-heading">we provide best services to our customers.</h4>
+  <div class="clock-container">
+    <div class="text-danger text-center fs-3 pt-2">
+      <span id="hrs">00</span>
+      <span>:</span>
+      <span id="min">00</span>
+      <span>:</span>
+      <span id="sec">00</span>
+      <span id="ampm"></span>
     </div>
+    <p class="text-center" id="openclose"></p>
+    <p class="text-center">Open : 08:00 AM TO 09:00 PM</p>
+  </div>
 
-    <div class="offer-container">
-      <div class="left-arrow">
-        <img class="arrow-image" src="./../img/service/angle-left.png" alt="" />
+  <div class="offer-container">
+    <div class="left-arrow">
+      <img class="arrow-image" src="./../img/service/angle-left.png" alt="" />
+    </div>
+    <div class="offer-info-container">
+      <div>
+        <img class="info-img" src="./../img/service/grocery.jpeg" alt="Image not found" />
       </div>
-      <div class="offer-info-container">
-        <div>
-          <img
-            class="info-img"
-            src="./../img/service/grocery.jpeg"
-            alt="Image not found"
-          />
-        </div>
-        <div>
-          <h1 class="offer-heading">Big Discount</h1>
-          <h3 class="offer-sub-heading">Ending soon</h3>
+      <div>
+        <h1 class="offer-heading">Big Discount</h1>
+        <h3 class="offer-sub-heading">Ending soon</h3>
 
-          <div class="offer-counter">
-            <div class="day">
-              <h2 class="day fs-3" id="b-day">Time</h2>
-              <h2>Day</h2>
-            </div>
-            <div class="hour">
-              <h2 class="hour fs-3" id="b-hour">Time</h2>
-              <h2>Hour</h2>
-            </div>
-            <div class="min">
-              <h2 class="min fs-3" id="b-min">Time</h2>
-              <h2>Min</h2>
-            </div>
-            <div class="sec">
-              <h2 class="sec fs-3" id="b-sec">Time</h2>
-              <h2>Sec</h2>
-            </div>
+        <div class="offer-counter">
+          <div class="day">
+            <h2 class="day fs-3" id="b-day">Time</h2>
+            <h2>Day</h2>
+          </div>
+          <div class="hour">
+            <h2 class="hour fs-3" id="b-hour">Time</h2>
+            <h2>Hour</h2>
+          </div>
+          <div class="min">
+            <h2 class="min fs-3" id="b-min">Time</h2>
+            <h2>Min</h2>
+          </div>
+          <div class="sec">
+            <h2 class="sec fs-3" id="b-sec">Time</h2>
+            <h2>Sec</h2>
           </div>
         </div>
-
-        <div class="offer-info">
-          Step into a world of flavor and savings at our grocery superstore! Discover the freshest produce and the best deals in town. Indulge your taste buds without breaking the bank.
-        </div>
       </div>
-      <div class="right-arrow">
-        <img
-          class="arrow-image"
-          src="./../img/service/right-arrow-angle.png"
-          alt=""
-        />
+
+      <div class="offer-info">
+        Step into a world of flavor and savings at our grocery superstore! Discover the freshest produce and the best
+        deals in town. Indulge your taste buds without breaking the bank.
       </div>
     </div>
+    <div class="right-arrow">
+      <img class="arrow-image" src="./../img/service/right-arrow-angle.png" alt="" />
+    </div>
+  </div>
 
-    <div class="card-container">
-      <div class="card">
-        <img
-          src="./../img/service/order.png"
-          alt="Image not found"
-          class="card-icon"
-        />
-        <h2 class="card-title">Online Order</h2>
-        <p class="card-text">
-          Say goodbye to crowded aisles and long checkout lines with our Online
-          Ordering and Delivery service. Browse our extensive selection of
-          products from the comfort of your home, choose your preferred delivery
-          time, and let us handle the rest
-        </p>
-      </div>
-      <div class="card">
-        <img
-          src="./../img/service/distribution.png"
-          alt="Image not found"
-          class="card-icon"
-        />
-        <h2 class="card-title">In-Store Pickup</h2>
-        <p class="card-text">
-          Prefer to pick up your groceries on your own schedule? With our
-          In-Store Pickup option, you can order online and collect your items at
-          a designated area within the store. Simply place your order, choose
-          your pickup time, and we'll have your groceries.
-        </p>
-      </div>
-
-      <div class="card">
-        <img
-          src="./../img/service/web-cam.png"
-          alt="Image not found"
-          class="card-icon"
-        />
-        <h2 class="card-title">Shopping Assistance</h2>
-        <p class="card-text">
-          Need a little extra help finding specific items or navigating the
-          aisles? Our friendly team of personal shopping assistants is here to
-          lend a hand. Whether you're searching for a hard-to-find ingredient or
-          seeking recommendations for your next meal.
-        </p>
-      </div>
-      <div class="card">
-        <img
-          src="./../img/service/produce.png"
-          alt="Image not found"
-          class="card-icon"
-        />
-        <h2 class="card-title">Produce Corner:</h2>
-        <p class="card-text">
-          Step into our Local Produce Corner, where you'll find the freshest
-          fruits, vegetables, and artisanal products sourced directly from
-          nearby farms and producers. Supporting local has never been easier for
-          collecting fruits and vegetables.
-        </p>
-      </div>
+  <div class="card-container">
+    <div class="card">
+      <img src="./../img/service/order.png" alt="Image not found" class="card-icon" />
+      <h2 class="card-title">Online Order</h2>
+      <p class="card-text">
+        Say goodbye to crowded aisles and long checkout lines with our Online
+        Ordering and Delivery service. Browse our extensive selection of
+        products from the comfort of your home, choose your preferred delivery
+        time, and let us handle the rest
+      </p>
+    </div>
+    <div class="card">
+      <img src="./../img/service/distribution.png" alt="Image not found" class="card-icon" />
+      <h2 class="card-title">In-Store Pickup</h2>
+      <p class="card-text">
+        Prefer to pick up your groceries on your own schedule? With our
+        In-Store Pickup option, you can order online and collect your items at
+        a designated area within the store. Simply place your order, choose
+        your pickup time, and we'll have your groceries.
+      </p>
     </div>
 
-    <footer>
-      <div class="footer-container">
-        <div class="footer-content">
-          <h3>Contact Us</h3>
-          Call us:-
-          <a class="linking" href="tel:+(303) 220-7662">(303) 220-7662</a><br />
-          Mail us:-
-          <a class="linking" href="mailto:smilecare@example.com"
-            >&nbsp;info@smilecare.com</a
-          >
-          <p>
-            <i class="bx bxs-map"></i>
-            <a href="https://maps.app.goo.gl/yyJFNNQEGYigLV8v6" target="blank">
-              Post Office,Loni Khurd, Kolhar Rd, Shanti Nagar, Loni, Maharashtra
-              413713</a
-            >
-          </p>
-        </div>
+    <div class="card">
+      <img src="./../img/service/web-cam.png" alt="Image not found" class="card-icon" />
+      <h2 class="card-title">Shopping Assistance</h2>
+      <p class="card-text">
+        Need a little extra help finding specific items or navigating the
+        aisles? Our friendly team of personal shopping assistants is here to
+        lend a hand. Whether you're searching for a hard-to-find ingredient or
+        seeking recommendations for your next meal.
+      </p>
+    </div>
+    <div class="card">
+      <img src="./../img/service/produce.png" alt="Image not found" class="card-icon" />
+      <h2 class="card-title">Produce Corner:</h2>
+      <p class="card-text">
+        Step into our Local Produce Corner, where you'll find the freshest
+        fruits, vegetables, and artisanal products sourced directly from
+        nearby farms and producers. Supporting local has never been easier for
+        collecting fruits and vegetables.
+      </p>
+    </div>
+  </div>
 
-        <div class="footer-content">
-          <h3>Quick Links</h3>
-          <ul class="list">
-            <li><a href="./../index.html">Home</a></li>
-            <li><a href="./../pages/offers.html">Offers</a></li>
-            <li><a href="./../pages/products.html">Products</a></li>
-            <li><a href="./../pages/about.html">About</a></li>
-            <li><a href="./../pages/contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-content">
-          <h3>Follow Us</h3>
-          <ul class="footer-social-icons">
-            <li>
-              <a href="https://www.facebook.com/saiprabha">
-                <i class="bx bxl-facebook"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://instagram.com/prabha_sai?igshid=OGQ5ZDc2ODk2ZA=="
-              >
-                <i class="bx bxl-instagram"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <h3>Contact Us</h3>
+        Call us:-
+        <a class="linking" href="tel:+(303) 220-7662">(303) 220-7662</a><br />
+        Mail us:-
+        <a class="linking" href="mailto:smilecare@example.com">&nbsp;info@smilecare.com</a>
+        <p>
+          <i class="bx bxs-map"></i>
+          <a href="https://maps.app.goo.gl/yyJFNNQEGYigLV8v6" target="blank">
+            Post Office,Loni Khurd, Kolhar Rd, Shanti Nagar, Loni, Maharashtra
+            413713</a>
+        </p>
       </div>
-      <div class="footer-bottom">
-        <p>Copyright © SaiPrabha Super Shopee</p>
+
+      <div class="footer-content">
+        <h3>Quick Links</h3>
+        <ul class="list">
+          <li><a href="./../index.html">Home</a></li>
+          <li><a href="./../pages/offers.html">Offers</a></li>
+          <li><a href="./../pages/products.html">Products</a></li>
+          <li><a href="./../pages/about.html">About</a></li>
+          <li><a href="./../pages/contact.html">Contact</a></li>
+        </ul>
       </div>
-    </footer>
-  </body>
+      <div class="footer-content">
+        <h3>Follow Us</h3>
+        <ul class="footer-social-icons">
+          <li>
+            <a href="https://www.facebook.com/saiprabha">
+              <i class="bx bxl-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://instagram.com/prabha_sai?igshid=OGQ5ZDc2ODk2ZA==">
+              <i class="bx bxl-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © SaiPrabha Super Shopee</p>
+    </div>
+  </footer>
+
+  <script>
+    function clock() {
+    const hrs = document.getElementById('hrs');
+    const min = document.getElementById('min');
+    const sec = document.getElementById('sec');
+    const ampm = document.getElementById('ampm');
+
+    const date = new Date();
+    hrs.innerText = (date.getHours() < 10 ? "0" : "") + date.getHours() % 12 || 12;
+    min.innerText = (date.getMinutes() < 10 ? "0" : "") + date.getMinutes();
+    sec.innerText = (date.getSeconds() < 10 ? "0" : "") + date.getSeconds();
+    ampm.innerText = date.getHours() >= 12 ? 'PM' : 'AM';
+
+    const openclose = document.getElementById('openclose');
+    if (date.getHours() >= 7 && date.getHours() < 21) {
+        openclose.innerText = "OPENED";
+    }
+    else {
+        openclose.innerText = "CLOSED";
+    }
+
+}
+setInterval(clock, 1000);
+clock();
+    const dayElement = document.getElementById('b-day');
+    const hourElement = document.getElementById('b-hour');
+    const minElement = document.getElementById('b-min');
+    const secElement = document.getElementById('b-sec');
+    function countdown() {
+      const countDate = new Date('May 21, 2024 00:00:00').getTime();
+
+      const now = new Date().getTime();
+      const gap = countDate - now;
+
+      const sec = 1000;
+      const min = sec * 60;
+
+      const hour = min * 60;
+      const day = hour * 24;
+
+      const textDay = Math.floor(gap / day);
+      const textHour = Math.floor((gap % day) / hour);
+      const textMin = Math.floor((gap % hour) / min);
+      const textSec = Math.floor((gap % min) / sec);
+
+      dayElement.innerText = textDay;
+      hourElement.innerText = textHour;
+      minElement.innerText = textMin;
+      secElement.innerText = textSec;
+
+
+    }
+    setInterval(countdown, 1000);
+    countdown();
+
+  </script>
+</body>
+
 </html>
