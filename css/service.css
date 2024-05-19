@@ -106,6 +106,10 @@ text-align: center;
     height: 150px;
     width: 100px;
 }
+.arrow-image:hover
+{
+    background-color: aquamarine;
+}
 .offer-info-container
 {
     display: flex;

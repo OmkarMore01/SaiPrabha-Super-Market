@@ -23,13 +23,13 @@
           <a href="./../pages/services.html">Services</a>
           <a href="./../pages/products.html">Products</a>
           <a href="./../pages/about.html">About Us</a>
-          <a href="./../pages/contact.html">Contact</a>
+          
            <a href="./login.html">Log in</a>
         </nav>
       </header>
     
       <h1 class="heading1"><span >Fruits</span>
-        <button class=" show-cart"  onclick="updateCart()">Show cart</button>
+        <button class=" show-cart"  onclick="updateCart()"> <a href="#cart-container">Show cart</a></button>
       </h1>
 
       <div id="fruit-section" class="card-container">
@@ -79,7 +79,9 @@
 
        
       </div>
-      <h1 class="heading2" id="pantry">Pantry</h1>
+      <h1 class="heading2" id="pantry"> <span>Pantry</span>
+        
+      </h1>
       
       <div class="product-container" id="product-container"></div>
       <div id="product-details"></div>
@@ -206,6 +208,13 @@ function updateCart() {
     alert("Sure add to cart section is below on pantry section");
     if (cart.length === 0) {
         cartContainer.innerHTML = '<p>Cart is empty</p>';
+        const backbtn=document.createElement('button');
+            backbtn.classList.add("book-btn");
+            const backanchor=document.createElement('a');
+            backanchor.setAttribute("href","./../pages/products.html");
+            backanchor.innerText="Back";
+            backbtn.appendChild(backanchor);
+            cartContainer.appendChild(backbtn);
     } else {
         cart.forEach(item => {
             const cartItem = document.createElement('div');
@@ -217,7 +226,7 @@ function updateCart() {
             cartContainer.appendChild(cartItem);
             
         });
-        const backbtn=document.createElement('button');
+            const backbtn=document.createElement('button');
             backbtn.classList.add("book-btn");
             const backanchor=document.createElement('a');
             backanchor.setAttribute("href","./../pages/products.html");
