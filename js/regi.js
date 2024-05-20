@@ -7,8 +7,11 @@
     const Address=document.getElementById('address').value;
     const email=document.getElementById('email').value;
     const anchor=document.getElementById('regi-anchor');
-
-         if(pass && uname)
+        if(localStorage.getItem("username")==uname && localStorage.getItem("password")==pass)
+            {
+                alert(`registeration is already done with ${uname}`);
+            }
+            else   if(pass && uname)
          {
             
            

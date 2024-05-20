@@ -2,8 +2,13 @@ function verify()
 {
     const uname=document.getElementById('uname').value;
     const pass=document.getElementById('pass').value;
-    
-         if(pass && uname)
+    const loginanchor=document.getElementById('login-anchor');
+    if(localStorage.getItem("flag")=="passed")
+        {
+            alert('You are already logged in no need to login again');
+            loginanchor.href="./products.html";
+        }
+         else if(pass && uname)
          {
             validate(uname,pass)
            
@@ -23,9 +28,12 @@ function validate(un,ps)
     localStorage.setItem("password",pass);*/
     const vuname=localStorage.getItem("username");
     const vpass=localStorage.getItem("password");
+    const loginanchor=document.getElementById('login-anchor');
     if(uname == vuname)
         {
             window.alert(`Login Succesfull`);
+            loginanchor.href="./products.html";
+            localStorage.setItem("flag","passed");
         }
     else
     {
